@@ -1,0 +1,15 @@
+<?php
+
+// FILE SYSTEM PATHS
+define('FS_ROOT', 'D:/xampp/htdocs/germany'); // Root path
+define('FS_PHP_PATH', FS_ROOT . '/php'); // Path for PHP logic files
+define('FS_COMPONENTS_PATH', FS_ROOT . '/components'); // Path for components
+define('FS_PAGES_PATH', FS_ROOT . '/pages'); // Path for pages
+
+
+// URL PATHS
+define('ROOT_URL', 'http://localhost:8081/germany/'); // Root URL
+define('JS_PATH', ROOT_URL . 'js'); // Path for JavaScript files
+define('CSS_PATH', ROOT_URL . 'css'); // Path for CSS files
+define('IMG_PATH', ROOT_URL . 'img'); // Path for image files
+

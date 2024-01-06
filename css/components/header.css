@@ -1,0 +1,131 @@
+/* Header */
+.header-main {
+    background: #F6F6F6;
+    background: -webkit-linear-gradient(#f6f6f6, white);
+    background: linear-gradient(#f6f6f6, white);
+    clear: both;
+    border-top: 5px solid #EDEDED;
+    max-height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+.header-container {
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.header-logo {
+    max-width: 80px;
+    display: grid;
+    margin: 0;
+    justify-self: center;
+}
+
+.header-navbar {
+    display: grid;
+}
+
+.header-navbar>ul {
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-navbar>ul>li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.header-navbar>ul>li>a {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-family: 'Gotham', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(77, 85, 94);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.header-language select {
+    background: transparent;
+    border: none;
+    font-family: 'Gotham', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(77, 85, 94);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/* Hamburguer Menu */
+.hamburger-menu {
+    justify-self: end;
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    /* Add some padding for touch-friendly tapping */
+    padding: 10px
+  }
+  
+  .hamburger-menu .bar1, .hamburger-menu .bar2, .hamburger-menu .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+@media only screen and (max-width:1400px) {
+    .header-navbar>ul>li>a{
+        font-size: 14px;
+    }
+    .header-language select{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:1260px) {
+    .header-navbar>ul>li>a{
+        font-size: 12px;
+    }
+    .header-language select{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .header-navbar {
+        display: none;
+        position: absolute;
+        top: 80px; /* Adjust according to your header's height */
+        right: 0;
+        width: 100%; /* Or any width you prefer */
+        background: white; /* Or any color/theme you prefer */
+    }
+
+    /* Style for when the menu is active */
+    .header-navbar.active {
+        display: grid;
+    }
+
+    .header-navbar>ul {
+        flex-direction: column-reverse;
+
+    }
+}
