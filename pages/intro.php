@@ -33,7 +33,7 @@ $headContent = '
 <head>
     ' . $metaContent . '
     <title>AP Group</title>
-    <link rel="stylesheet" href=" '. CSS_PATH .'/index.css">
+    <link rel="stylesheet" href=" ' . CSS_PATH . '/pages/intro-css.php">
 </head>
 ';
 
@@ -45,19 +45,20 @@ $bodyContent = '
     <main>
         ' . $headerContent . '
         <div class="hero">
-            <div class="hero-title">'. $language['header.intro'][$contentLanguage] .'</div>
-        </div>
-
-        <div class="intro-content">
-            <div class="intro-content-title">'. $language['intro.title'][$contentLanguage] .'</div>
+            <div class="hero-title">' . $language['header.intro'][$contentLanguage] . '</div>
         </div>
         <div class="intro-content">
-            <div><a href="productManagement.php">a</a></div>
-            <div><a href="jobPlacement.php">b</a></div>
+            <div class="intro-content-title">' . $language['intro.title'][$contentLanguage] . '</div>
+        <div class="intro-content-body">
+            <a href="projectManagement" class="link box pm"><div class="intro-content-box">' . $language['header.project_management'][$contentLanguage] . '</div></a>
+            <a href="jobPlacement" class="link box jp"><div class="intro-content-box">' . $language['header.job_placement'][$contentLanguage] . '</div></a>
+            <div class="link-box-title">' . $language['header.project_management'][$contentLanguage] . '</div>
+            <div class="link-box-title">' . $language['header.job_placement'][$contentLanguage] . '</div>
+        </div>
         </div>
         ' . $footerContent . '
     </main>
-    <script type="module" src=" '. JS_PATH .'/index.js"></script>
+    <script type="module" src=" ' . JS_PATH . '/index.js"></script>
 </body>
 ';
 
@@ -66,4 +67,3 @@ echo $bodyContent; // Echo the complete body content
 $htmlContent = '</html>';
 
 echo $htmlContent;
-?>

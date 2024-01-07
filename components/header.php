@@ -29,12 +29,12 @@ $header_content = '
                         </select>
                     </div>
                 </li>
-                <li><a href="'. ROOT_URL .'pages/contact.php">'. $language['header.contact'][$contentLanguage] .'</a></li>
-                <li><a href="'. ROOT_URL .'pages/jobPlacement.php">'. $language['header.job_placement'][$contentLanguage] .'</a></li>
-                <li><a href="'. ROOT_URL .'pages/projectManagement.php">'. $language['header.project_management'][$contentLanguage] .'</a></li>
-                <li><a href="'. ROOT_URL .'pages/intro.php">'. $language['header.intro'][$contentLanguage] .'</a></li>
-                <li><a href="'. ROOT_URL .'pages/about.php">'. $language['header.about'][$contentLanguage] .'</a></li>
-                <li><a href="'. ROOT_URL .'index.php">'. $language['header.home'][$contentLanguage] .'</a></li>
+                <li><a href="'. ROOT_URL .'contact">'. $language['header.contact'][$contentLanguage] .'</a></li>
+                <li><a href="'. ROOT_URL .'jobPlacement">'. $language['header.job_placement'][$contentLanguage] .'</a></li>
+                <li><a href="'. ROOT_URL .'projectManagement">'. $language['header.project_management'][$contentLanguage] .'</a></li>
+                <li><a href="'. ROOT_URL .'intro">'. $language['header.intro'][$contentLanguage] .'</a></li>
+                <li><a href="'. ROOT_URL .'about">'. $language['header.about'][$contentLanguage] .'</a></li>
+                <li><a href="'. ROOT_URL .'">'. $language['header.home'][$contentLanguage] .'</a></li>
             </ul>
         </div>
     </div>

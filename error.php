@@ -45,10 +45,10 @@ $bodyContent = '
     <main>
         ' . $headerContent . '
         <div class="hero">
-            <div class="hero-title">' . $language['home.title'][$contentLanguage] . '</div>
+            <div class="hero-title">ERROR</div>
         </div>
         <div class="main-content">
-            <div class="main-content-text">' . $language['home.text'][$contentLanguage] . '</div>
+            <div class="main-content-text">Please return to homepage: <a href="index.php"></a></div>
         </div>
         ' . $footerContent . '
     </main>

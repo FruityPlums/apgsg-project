@@ -1,0 +1,14 @@
+# Turn on RewriteEngine
+RewriteEngine On
+
+# RewriteBase directive, if needed (uncomment and modify if your application is in a subdirectory)
+# RewriteBase /
+
+# Redirect common HTTP errors
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php
+
+# URL Rewriting for pages in the 'pages' directory
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/?$ pages/$1.php [L]

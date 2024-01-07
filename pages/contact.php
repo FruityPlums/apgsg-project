@@ -33,7 +33,7 @@ $headContent = '
 <head>
     ' . $metaContent . '
     <title>AP Group</title>
-    <link rel="stylesheet" href=" '. CSS_PATH .'/index.css">
+    <link rel="stylesheet" href=" '. CSS_PATH .'/pages/contact-css.php">
 </head>
 ';
 
@@ -46,8 +46,11 @@ $bodyContent = '
         ' . $headerContent . '
         <div class="hero">
             <div class="hero-title">'. $language['contact.title'][$contentLanguage] .'</div>
-            <div class="hero-text">'. $language['contact.text'][$contentLanguage] .'</div>
-            <div class="hero-text">'. $language['contact.text2'][$contentLanguage] .'</div>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-title">'. $language['contact.text'][$contentLanguage] .'</div>
+            <div class="contact-text">'. $language['contact.text2'][$contentLanguage] .'</div>
         </div>
 
         ' . $footerContent . '
