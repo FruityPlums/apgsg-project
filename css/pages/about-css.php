@@ -9,10 +9,18 @@ require_once '../../config.php';
 @import url('../components/footer.css');
 @import url('../components/hero.css');
 
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
 .about{
     display: grid;
     margin: 80px 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     grid-gap: 20px;
 }
 
@@ -23,7 +31,9 @@ require_once '../../config.php';
     align-items: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f2f2f2;
+    background-color: #c19a6b;
+    width: 70%;
+    justify-self: center;
 }
 
 .about-content-title{
@@ -31,10 +41,9 @@ require_once '../../config.php';
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    color:white;
 }
 
-@media screen and (max-width: 500px){
-    .about{
-        grid-template-columns: 1fr;
-    }
+.about-content-text{
+    color:white
 }

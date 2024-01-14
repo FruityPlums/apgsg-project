@@ -48,7 +48,7 @@ $bodyContent = '
             <div class="hero-title">ERROR</div>
         </div>
         <div class="main-content">
-            <div class="main-content-text">Please return to homepage: <a href="index.php"></a></div>
+            <div class="main-content-text">Please return to <a href="">homepage</a></div>
         </div>
         ' . $footerContent . '
     </main>

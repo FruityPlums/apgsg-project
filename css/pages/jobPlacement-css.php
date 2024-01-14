@@ -10,7 +10,15 @@ require_once '../../config.php';
 @import url('../components/hero.css');
 
 
-.jp-title{
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.jp-title-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,11 +31,15 @@ require_once '../../config.php';
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    width: 70%;
+    justify-self: center;
 }
 
 .jp-title-text{
     font-size: 1rem;
     text-align: center;
+    width: 70%;
+    justify-self: center;
 }
 
 .jp-content{
@@ -39,7 +51,9 @@ require_once '../../config.php';
 
 .jp-content{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template:
+        "company candidates"
+        "company_text candidates_text";
     grid-gap: 20px;
     margin: 80px 20px;
 }
@@ -52,13 +66,14 @@ require_once '../../config.php';
 }
 
 .jp-services_for_companies{
+    grid-area: company_text;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f2f2f2;
+    background-color: #c19a6b;
 }
 
 .jp-service{
@@ -68,7 +83,7 @@ require_once '../../config.php';
     align-items: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f2f2f2;
+    background-color: #c19a6b;
 }
 
 .jp-service-title{
@@ -76,25 +91,32 @@ require_once '../../config.php';
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    color: white;
 }
 
 .jp-service-text{
     font-size: 1rem;
     text-align: center;
+    color: white;
 }
 
 .jp-services_for_candidates{
+    grid-area: candidates_text;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f2f2f2;
+    background-color: #c19a6b;
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 768px) {
     .jp-content{
-        grid-template-columns: 1fr;
+        grid-template:
+            "company"
+            "company_text"
+            "candidates"
+            "candidates_text";
     }
 }

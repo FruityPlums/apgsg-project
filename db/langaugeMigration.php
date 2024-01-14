@@ -1,4 +1,7 @@
 <?php
+
+require_once('../config.php');
+
 $keys = [
     'header' =>
     [
@@ -699,7 +702,7 @@ foreach ($result as $key => $value) {
     $german = $value['de'];
     $turkish = $value['tr'];
     try {
-        $pdo = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+            $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stmt = $pdo->prepare('INSERT INTO `language` (`id`, `identifier`, `english`, `croatian`, `german`, `turkish`) VALUES (NULL, :identifier, :english, :croatian, :german, :turkish)');
         $stmt->bindParam(':identifier', $identifier);

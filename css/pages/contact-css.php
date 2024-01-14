@@ -9,17 +9,49 @@ require_once '../../config.php';
 @import url('../components/footer.css');
 @import url('../components/hero.css');
 
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
 .contact-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 80px 20px;
+    display: grid;
+    grid-template:
+        "header header" 
+        "form  map"
+}
+
+.contact-header{
+    grid-area: header;
+    padding: 20px;
+    width: 70%;
+    justify-self: center;
+}
+
+.contact-form{
+    grid-area: form;
+    display : grid;
+    grid-template:
+        "contact-form"
+        "location";
+    padding: 20px;
+}
+
+.form{
+    grid-area: contact-form;
+    
+}
+
+.contact-location{
+    grid-area: location;
+    padding: 20px;
 }
 
 .contact-title{
     font-size: 1.5rem;
-    font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -27,4 +59,32 @@ require_once '../../config.php';
 .contact-text{
     font-size: 1rem;
     text-align: center;
+}
+
+.contact-form input[type=text], .contact-form input[type=email], .contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.contact-form button{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+    .contact-content{
+        grid-template:
+            "header"
+            "form"
+            "map";
+    }
 }

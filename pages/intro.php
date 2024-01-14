@@ -32,7 +32,7 @@ $headContent = '
 <html lang="' . $contentLanguage . '">
 <head>
     ' . $metaContent . '
-    <title>AP Group</title>
+    <title>AP Global Services Group | Services</title>
     <link rel="stylesheet" href=" ' . CSS_PATH . '/pages/intro-css.php">
 </head>
 ';
@@ -44,9 +44,8 @@ $bodyContent = '
 <body>
     <main>
         ' . $headerContent . '
-        <div class="hero">
-            <div class="hero-title">' . $language['header.intro'][$contentLanguage] . '</div>
-        </div>
+        <div class="hero"></div>
+        <h1 class="title">' . $language['header.intro'][$contentLanguage] . '</h1>
         <div class="intro-content">
             <div class="intro-content-title">' . $language['intro.title'][$contentLanguage] . '</div>
         <div class="intro-content-body">

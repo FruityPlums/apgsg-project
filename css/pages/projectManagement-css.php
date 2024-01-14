@@ -9,6 +9,13 @@ require_once '../../config.php';
 @import url('../components/footer.css');
 @import url('../components/hero.css');
 
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
 
 .pm-content-main-header{
     display: flex;
@@ -23,11 +30,15 @@ require_once '../../config.php';
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    width: 70%;
+    justify-self: center;
 }
 
 .pm-content-main-header-text{
     font-size: 1rem;
     text-align: center;
+    width: 70%;
+    justify-self: center;
 }
 
 .pm-content{
@@ -47,15 +58,9 @@ require_once '../../config.php';
 
 .pm-services{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
-
-.pm-services > .pm-service:nth-child(7):nth-last-child(1){
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
 
 .pm-service{
     display: flex;
@@ -64,7 +69,9 @@ require_once '../../config.php';
     align-items: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f2f2f2;
+    background-color: #c19a6b;
+    width: 70%;
+    justify-self: center;
 }
 
 .pm-service-title{
@@ -72,20 +79,11 @@ require_once '../../config.php';
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    color:white;
 }
 
 .pm-service-text{
     font-size: 1rem;
     text-align: center;
-}
-
-@media screen and (max-width: 720px){
-    .pm-services{
-        grid-template-columns: 1fr;
-    }
-
-    .pm-services > .pm-service:nth-child(7):nth-last-child(1){
-        grid-column-start: auto;
-        grid-column-end: auto;
-    }
+    color:white;
 }

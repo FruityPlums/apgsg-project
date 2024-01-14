@@ -32,7 +32,7 @@ $headContent = '
 <html lang="' . $contentLanguage . '">
 <head>
     ' . $metaContent . '
-    <title>AP Group</title>
+    <title>AP Global Services Group | Project Management</title>
     <link rel="stylesheet" href=" ' . CSS_PATH . '/pages/projectManagement-css.php">
 </head>
 ';
@@ -45,9 +45,8 @@ $bodyContent = '
     <main>
         ' . $headerContent . '
         <div class="hero">
-            <div class="hero-title">' . $language['project_management.title'][$contentLanguage] . '</div>
         </div>
-
+        <h1 class="title">' . $language['project_management.title'][$contentLanguage] . '</h1>
         <div class="pm-content-main-header">
             <div class="pm-content-main-header-title">' . $language['project_management.subtitle'][$contentLanguage] . '</div>
             <div class="pm-content-main-header-text">' . $language['project_management.text'][$contentLanguage] . '</div>

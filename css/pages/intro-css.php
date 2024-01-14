@@ -9,6 +9,13 @@ require_once '../../config.php';
 @import url('../components/footer.css');
 @import url('../components/hero.css');
 
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
 
 .intro-content{
 display: grid;
@@ -18,8 +25,9 @@ grid-gap: 20px;
 }
 
 .intro-content-title{
+width: 70%;
+justify-self: center;    
 font-size: 1.5rem;
-font-weight: bold;
 margin-bottom: 20px;
 text-align: center;
 }

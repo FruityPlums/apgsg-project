@@ -2,7 +2,7 @@
 
 // Call the database to get language translations
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=test", "root", "");
+            $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $result = $pdo->query("SELECT * FROM language");
     $language = $result->fetchAll(PDO::FETCH_ASSOC);

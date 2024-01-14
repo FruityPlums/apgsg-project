@@ -32,7 +32,7 @@ $headContent = '
 <html lang="' . $contentLanguage . '">
 <head>
     ' . $metaContent . '
-    <title>AP Group</title>
+    <title>AP Global Services Group | Job Placement</title>
     <link rel="stylesheet" href=" ' . CSS_PATH . '/pages/jobPlacement-css.php">
 </head>
 ';
@@ -45,10 +45,9 @@ $bodyContent = '
     <main>
         ' . $headerContent . '
         <div class="hero">
-            <div class="hero-title">' . $language['job_placement.title'][$contentLanguage] . '</div>
         </div>
-
-        <div class="jp-title">
+        <h1 class="title">' . $language['job_placement.title'][$contentLanguage] . '</h1>
+        <div class="jp-title-container">
             <div class="jp-title-header">' . $language['job_placement.subtitle'][$contentLanguage] . '</div>
             <div class="jp-title-text">' . $language['job_placement.text'][$contentLanguage] . '</div>
         </div>

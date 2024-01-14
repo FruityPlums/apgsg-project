@@ -32,7 +32,7 @@ $headContent = '
 <html lang="' . $contentLanguage . '">
 <head>
     ' . $metaContent . '
-    <title>My Website</title>
+    <title>AP Global Services Group</title>
     <link rel="stylesheet" href=" ' . CSS_PATH . '/index-css.php">
 </head>
 ';
@@ -42,16 +42,15 @@ echo $headContent; // Echo the complete head content
 
 $bodyContent = '
 <body>
+    ' . $headerContent . '
     <main>
-        ' . $headerContent . '
-        <div class="hero">
-            <div class="hero-title">' . $language['home.title'][$contentLanguage] . '</div>
-        </div>
+        <div class="hero"></div>
+        <h1 class="title">' . $language['home.title'][$contentLanguage] . '</h1>
         <div class="main-content">
             <div class="main-content-text">' . $language['home.text'][$contentLanguage] . '</div>
         </div>
-        ' . $footerContent . '
     </main>
+    ' . $footerContent . '
     <script type="module" src=" ' . JS_PATH . '/index.js"></script>
 </body>
 ';

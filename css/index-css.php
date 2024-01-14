@@ -9,6 +9,14 @@ require_once '../config.php';
 @import url('components/footer.css');
 @import url('components/hero.css');
 
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -17,22 +25,10 @@ require_once '../config.php';
 }
 
 .main-content>.main-content-text {
-    font-size: 20px;
+    width: 70%;
+    justify-self: center;
+    font-size: 1.75rem;
     font-weight: 400;
     line-height: 1;
     text-align: center;
-}
-
-@media only screen and (max-width:1080px) {
-    .hero>.hero-title {
-
-        font-size: 40px;
-
-    }
-    
-    .hero>.hero-subtitle {
-
-        font-size: 20px;
-    }
-    
 }
