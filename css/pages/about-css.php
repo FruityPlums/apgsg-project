@@ -45,5 +45,7 @@ require_once '../../config.php';
 }
 
 .about-content-text{
+    width: 70%;
+    justify-self: center;
     color:white
 }
