@@ -13,7 +13,7 @@ require_once '../../config.php';
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin:40px 10px 10px 20px;
     line-height: 1.5;
 }
 
@@ -37,7 +37,7 @@ require_once '../../config.php';
     grid-template:
         "contact-form"
         "location";
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 .form{

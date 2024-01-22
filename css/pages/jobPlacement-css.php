@@ -14,7 +14,7 @@ require_once '../../config.php';
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin:40px 10px 10px 20px;
     line-height: 1.5;
 }
 
@@ -23,7 +23,7 @@ require_once '../../config.php';
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 80px 20px;
+    margin:30px 20px;
 }
 
 .jp-title-header{
@@ -46,7 +46,7 @@ require_once '../../config.php';
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    margin: 80px 20px;
+    margin:30px 20px;
 }
 
 .jp-content{
@@ -55,7 +55,7 @@ require_once '../../config.php';
         "company candidates"
         "company_text candidates_text";
     grid-gap: 20px;
-    margin: 80px 20px;
+    margin:30px 20px;
 }
 
 .jp-title{
@@ -91,13 +91,11 @@ require_once '../../config.php';
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-    color: white;
 }
 
 .jp-service-text{
     font-size: 1rem;
     text-align: center;
-    color: white;
 }
 
 .jp-services_for_candidates{

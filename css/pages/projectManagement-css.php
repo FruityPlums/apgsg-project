@@ -13,7 +13,7 @@ require_once '../../config.php';
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin:40px 10px 10px 20px;
     line-height: 1.5;
 }
 
@@ -22,7 +22,7 @@ require_once '../../config.php';
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 80px 20px;
+    margin:30px 20px;
 }
 
 .pm-content-main-header-title{
@@ -46,7 +46,7 @@ require_once '../../config.php';
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 80px 20px;
+    margin:30px 20px;
 }
 
 .pm-title{
@@ -79,11 +79,9 @@ require_once '../../config.php';
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-    color:white;
 }
 
 .pm-service-text{
     font-size: 1rem;
     text-align: center;
-    color:white;
 }

@@ -63,7 +63,7 @@ $bodyContent = '
                     <button>Send Message</button>
                 </form>
                 <div class="contact-location">
-                    <div class="location-address">Media One Tower, Level 1, Office 1, Media City, Dubai, UAE, PO Box 12345</div>
+                    <div class="location-address">Media One Tower, Level 38, Office 41, Media City, Dubai, UAE, PO Box 79998</div>
                     <div class="location-phone">+971 (0)23 123 1234</div>
                     <div class="location-email">info@apgsg.ae</div>
                     <div class="location-map"></div>

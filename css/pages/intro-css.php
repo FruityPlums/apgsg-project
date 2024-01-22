@@ -10,23 +10,23 @@ require_once '../../config.php';
 @import url('../components/hero.css');
 
 .title{
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.5;
+font-size: 2.5rem;
+font-weight: bold;
+text-align: center;
+margin:40px 10px 10px 20px;
+line-height: 1.5;
 }
 
 .intro-content{
 display: grid;
-margin: 80px 20px;
+margin:30px 20px;
 grid-template-columns: 1fr;
 grid-gap: 20px;
 }
 
 .intro-content-title{
 width: 70%;
-justify-self: center;    
+justify-self: center;
 font-size: 1.5rem;
 margin-bottom: 20px;
 text-align: center;
@@ -90,10 +90,10 @@ background-size: cover;
 grid-template-columns: 1fr;
 }
 .link-box-title{
-   display:none;
+display:none;
 }
 .intro-content-box:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 1.5rem;
+background-color: rgba(0, 0, 0, 0.5);
+font-size: 1.5rem;
 }
 }

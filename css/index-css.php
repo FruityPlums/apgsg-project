@@ -13,7 +13,7 @@ require_once '../config.php';
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin:40px 10px 10px 20px;
     line-height: 1.5;
 }
 
@@ -21,7 +21,7 @@ require_once '../config.php';
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    margin: 80px 20px;
+    margin:30px 20px;
 }
 
 .main-content>.main-content-text {

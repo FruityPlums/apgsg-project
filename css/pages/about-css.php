@@ -13,13 +13,13 @@ require_once '../../config.php';
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin:40px 10px 10px 20px;
     line-height: 1.5;
 }
 
 .about{
     display: grid;
-    margin: 80px 20px;
+    margin:30px 20px;
     grid-template-columns: 1fr ;
     grid-gap: 20px;
 }
@@ -41,11 +41,9 @@ require_once '../../config.php';
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-    color:white;
 }
 
 .about-content-text{
     width: 70%;
     justify-self: center;
-    color:white
 }
