@@ -44,7 +44,7 @@ require_once '../../config.php';
 }
 
 .about-content-text{
-    width: 80%;
+    width: 50%;
     margine: auto;
     /*justify-self: center;*/
 }
