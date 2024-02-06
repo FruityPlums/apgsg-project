@@ -1,12 +1,5 @@
 <?php
 
-// DB
-/* 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'apgsgae_apgsg');
-define('DB_USER', 'apgsgae_admin');
-define('DB_PASS', 'A$)x%Kg;mmN#'); 
-*/
 
 // DB LOCALHOST
 define('DB_HOST', 'localhost');
@@ -15,8 +8,8 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 
 // LOCAL DEV
-define('ROOT_URL', 'http://localhost:8081/germany/'); // Root URL
-define('FS_ROOT', 'D:/xampp/htdocs/germany'); // Root path
+define('ROOT_URL', 'http://localhost/apgsg-project/'); // Root URL
+define('FS_ROOT', 'D:/samp/htdocs/apgsg-project'); // Root path
 
 // FILE SYSTEM PATHS
 /* define('FS_ROOT', __DIR__); // Root path */
